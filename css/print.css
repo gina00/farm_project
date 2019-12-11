@@ -21,12 +21,11 @@ html{
 }
 body{
     height: 100%;
+    font-family: "宋体";
 }
 header {
-    font-size: 24px;
-    letter-spacing: 1px;
+    font-size: 30px;
     text-align: center;
-    padding: 10px 0;
 }
 .centerPos{
     display:table;
@@ -36,31 +35,42 @@ header {
 .subPos{
     display: table-cell;
     vertical-align: middle;
+    padding: 0 50px;
 }
 .specialHeard {
-    font-size: 60px;
-    padding-bottom: 60px;
+    font-size: 52px;
+    padding-bottom: 30px;
 }
 .sub-header.special-sub-header{
-    font-size: 24px;
-    padding-bottom: 40px;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.special-sub-header p{
+    padding-top: 5px;
 }
 .specialH5{
-    font-size: 14px;
-    padding: 30px 0;
+    font-size: 26px;
+    padding: 60px 0 10px;
 }
-.specailPd{
+.special-table.table-panel thead tr th{
+    font-size: 24px;
+    line-height: 35px;
+}
+.bold{ 
+    font-weight: bold;
+}
+/* .specailPd{
     padding: 0 10px;
-}
+} */
 .sub-header{
-    letter-spacing: 1px;
-    padding: 30px 0 0;
+    padding: 40px 0 0;
     font-size: 18px;
 }
 .txtPanel {
     display: flex;
     justify-content: space-between;
     margin-top: 5px;
+    font-size: 18px;
 }
 .layui-table, .layui-table-view {
     margin: 10px 0 0;
@@ -96,20 +106,35 @@ header {
 }
 .table-panel{
     overflow: auto;
-    text-align: center;
+    text-align: center;    
+    margin: 0;
 }
 .table-panel,.table-panel thead th{
     text-align: center;
 }
+.table-panel thead th {
+    color: #000;
+    border-color: #000;
+}
+.table-panel tbody td {
+    color: #000;
+    border-color: #000;
+}
+.table-panel.layui-table td, .table-panel.layui-table th{
+    padding: 7px 5px;
+    font-size: 18px;
+}
+
 .hr-bottom{
     border-bottom: 2px solid #666;
 }
 .bottom-panel{
-    margin: 40px 0;
+    margin: 90px 0;
     text-align: right;
+    font-size: 20px;
 }
 .bottom-panel p{
-    margin: 15px 0;
+    margin: 20px 0;
 }
 .txtPanel span{
     padding: 5px 0;
@@ -123,13 +148,15 @@ footer{
     margin-bottom: 40px;
     margin-top: 40px;
     line-height: 30px;
+    font-size: 20px;
 }
 .footerSpan{
-    width:10%;
+    width:12%;
 }
 .footerP{
     text-align: justify;
-    width: 90%;
+    width: 88%;
+    line-height: 40px;
 }
 /* 滚动条 */
 ::-webkit-scrollbar {
