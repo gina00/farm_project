@@ -1,0 +1,212 @@
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container{
+    min-height: 700px;
+}
+.layui-fluid {
+    padding: 0;
+}
+
+.custom-bg {
+    width: 100%;
+    background: url(../images/home_image_head.jpg);
+    background-size: cover;
+}
+
+.main-nav {
+    height: 70px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.sub-nav {
+    background: rgba(2, 91, 0, 0.7);
+}
+
+.nav-panel-ul {
+    overflow: auto;
+    padding: 15px 0;
+}
+
+.nav-panel-ul li {
+    float: left;
+    font-size: 16px;
+    padding: 0 15px;
+}
+
+.nav-panel-ul li a {
+    color: #fff;
+}
+
+.nav-panel-ul li a:hover {
+    color: #fff000;
+}
+
+.nav-panel-ul li.selected a {
+    color: #fff000;
+}
+
+.nav-panel-user {
+    float: right;
+    padding: 15px 0;
+    overflow: auto;
+}
+
+.nav-panel-user div {
+    margin: 0 20px;
+    float: left;
+}
+.usericon{
+    color: #fff;
+}
+.usericon a {
+    color: #fff;
+}
+
+.usericon a:hover {
+    color: #fff000;
+}
+.sub-nav ul{
+    overflow: auto;
+    padding: 5px 20px;
+}
+.sub-nav ul li{
+    float: left;
+    margin-right: 30px;;
+}
+.sub-nav ul li a{
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+.sub-nav ul li a:hover{
+    background: #30b254;
+    border: 1px solid #fff;
+}
+.sub-nav ul li.selected a{
+    background: #30b254;
+    border: 1px solid #fff;
+}
+.main-content{
+    background: #f7f7f7;
+    padding: 30px;
+    min-height: 450px;
+}
+.tool-panel{
+    overflow: auto;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.tool-panel .title{
+    float: left;
+}
+.tool-panel .title .cn{
+    color: #30b254;
+    font-size: 48px;
+}
+.tool-panel .title .en{
+    color: #979797;
+    font-size: 24px;
+    margin-left: 30px;
+}
+.search-panel{
+    position: relative;
+    border-radius: 5px;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+    overflow: auto;
+    height: 40px;
+    float: right;
+    top: 20px;
+}
+.search-panel input{
+    outline: none;
+    border: none;
+    height: 40px;
+    padding-left: 20px;
+    color: #979797;
+}
+.search-panel .layui-icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.sys-ul-panel li{
+    margin-top: 30px;
+}
+.sys-ul-panel li a{
+    color: #676767;
+    font-size: 14px;
+}
+.sys-ul-panel li a:hover{
+    color: #30b254;
+    cursor: pointer;
+}
+.txt{
+    margin-left: 10px;
+}
+.right-nav{
+    min-height: 450px;
+    background: #ffffff;
+}
+.right-nav ul{
+    padding: 40px;
+}
+.right-nav ul li{
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.right-nav ul li a{
+    cursor: pointer;
+    color: #676767;
+}
+.right-nav ul li a:hover{
+    color: #30b254;
+}
+.right-nav ul li a i{
+    font-weight: bold;
+}
+footer{
+    padding: 40px 0;
+    text-align: center;
+}
+/* icon */
+span[class*="icon-"] {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.icon-cropfarming{
+    background: url(../images/home_icon_cropfarming.png) no-repeat center;
+}
+.icon-breeding{
+    background: url(../images/home_icon_breeding.png) no-repeat center;
+}
+.icon-mechanical{
+    background: url(../images/home_icon_mechanical.png) no-repeat center;
+}
+.icon-povertyalleviation{
+    background: url(../images/home_icon_povertyalleviation.png) no-repeat center;
+}
+.icon-revitalize{
+    background: url(../images/home_icon_revitalize.png) no-repeat center;
+}
+.icon-safety{
+    background: url(../images/home_icon_safety.png) no-repeat center;
+}
+.icon-lawenforcement{
+    background: url(../images/home_icon_lawenforcement.png) no-repeat center;
+}
+.icon-policy{
+    background: url(../images/home_icon_policy.png) no-repeat center;
+}
+.icon-other{
+    background: url(../images/home_icon_other.png) no-repeat center;
+}

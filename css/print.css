@@ -1,0 +1,148 @@
+/* 重构--start*/
+.layui-table thead tr {
+    background: transparent;
+}
+.layui-fluid{
+    padding: 0px;
+}
+.layui-fluid p {
+    margin: 0;
+}
+.specialTab .layui-table td, .specialTab .layui-table th {
+    position: relative;
+    padding: 9px 15px;
+    min-height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+}
+/* 重构--end*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+header {
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 0;
+}
+.centerPos{
+    display:table;
+    width: 100%;
+    height: 100%;
+}
+.subPos{
+    display: table-cell;
+    vertical-align: middle;
+}
+.specialHeard {
+    font-size: 60px;
+    padding-bottom: 60px;
+}
+.sub-header.special-sub-header{
+    font-size: 24px;
+    padding-bottom: 40px;
+}
+.specialH5{
+    font-size: 14px;
+    padding: 30px 0;
+}
+.specailPd{
+    padding: 0 10px;
+}
+.sub-header{
+    letter-spacing: 1px;
+    padding: 30px 0 0;
+    font-size: 18px;
+}
+.txtPanel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+.layui-table, .layui-table-view {
+    margin: 10px 0 0;
+}
+.table_bottom {
+    border: 1px solid #e6e6e6;
+    border-top: 0;
+    display: flex;
+}
+.item{
+    padding: 10px 0;
+    text-align: center;
+    border-right: 1px solid #e6e6e6;
+}
+.item:last-child{
+    border-right: none;
+}
+.item_01{
+    width: 151px;
+}
+.item_02{
+    width: 336px;
+}
+.item_03{
+    width: calc(100% - 151px - 336px);
+}
+.table_bottomPanel{
+    text-align: center;
+    margin-top: -1px;
+}
+.table_bottomPanel tr:last-child td{
+    padding: 0 15px;
+}
+.table-panel{
+    overflow: auto;
+    text-align: center;
+}
+.table-panel,.table-panel thead th{
+    text-align: center;
+}
+.hr-bottom{
+    border-bottom: 2px solid #666;
+}
+.bottom-panel{
+    margin: 40px 0;
+    text-align: right;
+}
+.bottom-panel p{
+    margin: 15px 0;
+}
+.txtPanel span{
+    padding: 5px 0;
+} 
+footer{
+    display: flex;
+    padding: 20px 0;
+    border-width: 2px 0 2px 0;
+    border-style: solid;
+    border-color: #666;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    line-height: 30px;
+}
+.footerSpan{
+    width:10%;
+}
+.footerP{
+    text-align: justify;
+    width: 90%;
+}
+/* 滚动条 */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background-color: #eee;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #dddee0;
+}

@@ -1,0 +1,152 @@
+i[class^="icon-"] {
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    vertical-align: middle;
+}
+/* 右侧区域 */
+.rightContentPanel{
+    padding: 20px;
+}
+.contentPanel{
+    margin-bottom: 10px;
+}
+/* 重构layui table --start*/
+.contentPanel .layui-table thead tr {
+    background: transparent;
+}
+.contentPanel .layui-table[lay-skin=line]{
+    border-width: 1px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: #e6e6e6;
+}
+.contentPanel .layui-table thead tr th{
+    font-weight: bold;
+}
+.contentPanel .layui-table tbody tr:last-child td {
+    border-color: transparent;
+}
+.contentPanel .layui-table thead tr th,.contentPanel .layui-table tr td {
+    text-align: center;
+}
+/* 重构layui table --end*/
+.content-title{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.title-l span{
+    font-size: 16px;
+    color: #000;
+}
+.main-content{
+    padding: 0 10px;
+    border: 1px solid #e6e6e6;
+}
+.operate{
+    color:#3f9ffe;
+}
+.operate:hover{
+    cursor: pointer;
+    color:#0af;
+}
+.operate .layui-icon{
+    font-size: 14px;
+}
+.content-list ul li{
+    padding: 15px 0;
+    border: 1px solid #d4d4d4;
+    position: relative;
+    margin: 0 0 10px;
+}
+.content-list ul li:hover{
+    cursor: pointer;
+    border: 1px solid green;
+}
+.content-list ul li.selected{
+    border: 1px solid green;
+}
+.content-list ul li span{
+    padding: 0 15px;
+}
+.sub-list-txt{
+    width: 80%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sub-list-txt::before{
+    content: '●';
+    margin-right: 10px;
+    color: #3f9ffe;
+}
+.sub-date{
+    width: 20%;
+    color: #999;
+    text-align: right;
+}
+.menu-list-panel{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-list-panel ul{
+    width: 100%;
+    overflow: auto;
+}
+.menu-list-panel ul li{
+    float: left;
+    padding: 10px;
+    width: 10%;
+}
+.iconMenu-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.iconMenu-panel i{
+    border: 1px solid #3f9ffe;
+    display: inline-block;
+    padding: 9px 10px;
+    border-radius: 50px;
+}
+.iconMenu-panel span{
+    margin: 3px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+}
+.iconMenu-add-panel{
+    padding: 10px;
+    cursor: pointer;
+}
+.iconMenu-add-panel i{
+    border: 1px solid #b2b0b0;
+    display: inline-block;
+    padding: 9px 10px;
+    border-radius: 50px;
+}
+.icon-menu-ready{
+    background: url(../images/icon_1.png) center no-repeat;
+}
+.icon-menu-notice{
+    background: url(../images/icon_2.png) center no-repeat;
+}
+.icon-menu-all{
+    background: url(../images/icon_3.png) center no-repeat;
+}
+.icon-menu-01 {
+    background: url(../images/icon_6.png) center no-repeat;
+}
+.icon-menu-02 {
+    background: url(../images/icon_7.png) center no-repeat;
+}
+.icon-menu-add {
+    background: url(../images/icon_5.png) center no-repeat;
+}

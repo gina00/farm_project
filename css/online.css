@@ -1,0 +1,84 @@
+.titleBox{
+    padding: 10px 0;
+    border-bottom: 1px dashed #d4d4d4;
+    position: relative;
+    color: #333;
+    font-size: 20px;
+}
+.titleBox p{
+    text-align: center;
+}
+.pos-panel{
+    position: relative;
+    padding: 20px 0;
+    overflow: auto;
+    height: auto;
+}
+.pos-panel .sub-txt{
+    top: 10px;
+}
+.sub-txt-panel{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.sub-txt-panel span{
+    color: gray;
+    margin-left: 10px;
+}
+.title-l i{
+    font-size: 20px;
+    color: green;
+}
+.sub-txt{
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    font-size: 12px;
+    color: green;
+}
+.sub-txt i{
+    font-size: 12px;
+}
+.contentPanel{
+    margin: 20px 0;
+}
+.contentPanel p{
+    text-align: justify;
+    text-indent: 2em;
+    line-height: 30px;
+}
+.contentPanel ul li{
+    width: 100%;
+    padding: 15px 0;
+    border: 1px solid #d4d4d4;
+    position: relative;
+    margin: 15px 0;
+}
+.contentPanel ul li:hover{
+    cursor: pointer;
+    border: 1px solid green;
+}
+.contentPanel ul li.selected{
+    border: 1px solid green;
+}
+.contentPanel ul li span{
+    padding: 0 15px;
+}
+.sub-list-txt{
+    width: 80%;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.sub-list-txt::before{
+    content: '•';
+    margin-right: 10px;
+}
+.sub-date{
+    width: 20%;
+    color: #999;
+    text-align: right;
+}

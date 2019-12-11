@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../node_modules/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../css/print.css">
+
+</head>
+
+<body>
+    <div class="layui-fluid centerPos">
+        <div class="subPos specailPd">
+            <header>
+                全省生猪及产品价格采集日报表(11月10日)
+            </header>
+            <section class="txtPanel">
+                <span>福建省生猪稳产保供联席会议办公室</span>
+                <span>单位：元/公斤</span>
+            </section>
+            <div class="layui-row">
+                <table class="layui-table table-panel" lay-filter="test">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" width="150px">地区</th>
+                            <th colspan="2">
+                                活猪
+                            </th>
+                            <th colspan="2">
+                                白条猪肉
+                            </th>
+                            <th colspan="2">
+                                精瘦肉
+                            </th>
+                            <th colspan="2">
+                                肋条肉
+                            </th>
+                            <th colspan="2">
+                                带皮后腿肉
+                            </th>
+                            <th colspan="2">
+                                肋排肉
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                            <th>
+                                价格
+                            </th>
+                            <th>
+                                环比增长(%)
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="font-weight: bold;">
+                            <td>全省平均</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>福州市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>厦门市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>漳州市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>泉州市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>三明市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>莆田市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>南平市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>龙岩市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>宁德市</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>平潭综合试验区</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>54.8</td>
+                            <td>-0.7</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                            <td>42.3</td>
+                            <td>-0.3</td>
+                        </tr>
+                        <tr>
+                            <td>责任单位</td>
+                            <td colspan="4">省农业农村厅</td>
+                            <td colspan="8">省发展和改革委员会</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <section class="txtPanel">
+                <span>填报人：寇涛</span>
+                <span>审核人：黄宏源</span>
+            </section>
+        </div>
+    </div>
+    <script src="../node_modules/layui/layui.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        layui.use('table', function () {
+            var table = layui.table;
+            table.render({
+                elem: '#tableData',
+                height: 540,
+                url: '../data/allCity.json', //数据接口
+                cols: [
+                    [ //标题栏
+                        {
+                            field: 'username',
+                            title: '地区',
+                            rowspan: 2, //rowspan即纵向跨越的单元格数
+                            width: 150,
+                            align: 'center'
+                        }, {
+                            title: '活猪',
+                            colspan: 2, //colspan即横跨的单元格数，这种情况下不用设置field和width
+                            align: 'center'
+                        }, {
+                            title: '白条猪肉',
+                            align: 'center',
+                            colspan: 2
+                        }, {
+                            title: '精瘦肉',
+                            align: 'center',
+                            colspan: 2
+                        }, {
+                            title: '肋条肉',
+                            align: 'center',
+                            colspan: 2
+                        },
+                        {
+                            title: '带皮后腿肉',
+                            align: 'center',
+                            colspan: 2
+                        }, {
+                            title: '肋排肉',
+                            align: 'center',
+                            colspan: 2
+                        },
+                    ],
+                    [{
+                            field: 'livePigProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'livePigGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                        {
+                            field: 'whitePorkProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'whitePorkGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                        {
+                            field: 'leanProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'leanPorkGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                        {
+                            field: 'RibProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'RibGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                        {
+                            field: 'backMeatProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'backMeatGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                        {
+                            field: 'ribRowProvince',
+                            title: '价格',
+                            align: 'center',
+                        }, {
+                            field: 'ribRowGrowth',
+                            title: '环比增长(%)',
+                            align: 'center',
+                        },
+                    ]
+
+                ]
+            })
+        });
+
+        $(function () {
+            var col_w = $(".laytable-cell-1-1-0").width();
+            $(".item_02").css("width", col_w * 4);
+        })
+    </script>
+</body>
+
+
+</html>
