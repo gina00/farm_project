@@ -1,10 +1,12 @@
 @font-face {
     font-family: 'alibabaPuHuiTi';
-    src: url('../fonts/Alibaba-PuHuiTi-Regular.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Bold.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Medium.otf') format('opentype'),url('../fonts/FontAwesome.otf') format('opentype');
+    src: url('../fonts/Alibaba-PuHuiTi-Regular.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Bold.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Medium.otf') format('opentype'), url('../fonts/FontAwesome.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-html,body{
+
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -40,16 +42,17 @@ img {
     width: 1440px;
     margin: 0 auto;
     float: none;
-    font-family: alibabaPuHuiTi,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Microsoft YaHei;
+    font-family: alibabaPuHuiTi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Microsoft YaHei;
 }
 
 .sub-nav {
     background: rgba(2, 91, 0, 0.7);
-    
+
 }
-.sub-nav p{
+
+.sub-nav p {
     font-size: 20px;
-    font-family: alibabaPuHuiTi,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Microsoft YaHei;
+    font-family: alibabaPuHuiTi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Microsoft YaHei;
 }
 
 .nav-panel-ul {
@@ -89,9 +92,11 @@ img {
     line-height: 23px;
     color: #fff;
 }
-.usericon span{
+
+.usericon span {
     float: left;
 }
+
 .usericon a {
     color: #fff;
     width: 145px;
@@ -140,15 +145,22 @@ img {
 }
 
 .main-panel {
-    width: 1440px;
-    margin: 0 auto;
-    height: 63%;
+    width: 100%;
+    overflow: auto;
+    background: #f7f7f7;
+    position: relative;
 }
 
 .main-content {
-    height: 100%;
     background: #f7f7f7;
-    padding: 10px 30px;
+    padding: 10px 0 10px 30px;
+}
+
+.contentW {
+    width: 1440px;
+    margin: 0 auto;
+    overflow: auto;
+    position: relative;
 }
 
 .tool-panel {
@@ -164,7 +176,7 @@ img {
 .tool-panel .title .cn {
     color: #30b254;
     font-size: 48px;
-    font-family: alibabaPuHuiTi,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Microsoft YaHei;
+    font-family: alibabaPuHuiTi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Microsoft YaHei;
     font-weight: bold;
 }
 
@@ -172,7 +184,7 @@ img {
     color: #979797;
     font-size: 24px;
     margin-left: 30px;
-    font-family: alibabaPuHuiTi,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,Microsoft YaHei;
+    font-family: alibabaPuHuiTi, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Microsoft YaHei;
 }
 
 .search-panel {
@@ -182,6 +194,9 @@ img {
     background: #fff;
     overflow: auto;
     margin-top: 20px;
+}
+.search-panel:hover{
+    border: 1px solid #30b254;
 }
 
 .search-panel input {
@@ -198,7 +213,14 @@ img {
     top: 10px;
     right: 10px;
 }
-
+.sys-ul-panel{
+    overflow: auto;
+    margin-bottom: 30px;
+}
+.sys-ul-panel ul{
+    width: 33.33%;
+    float: left;
+}
 .sys-ul-panel li {
     margin-top: 30px;
 }
@@ -217,10 +239,17 @@ img {
     margin-left: 10px;
     vertical-align: middle;
 }
-
+.showRightBtn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
 .right-nav {
     height: 100%;
     background: #ffffff;
+    position: absolute;
+    right: 0px;
+    top: 0;
 }
 
 .right-nav ul {
@@ -249,7 +278,8 @@ footer {
     padding: 40px 0;
     text-align: center;
 }
-.logo_panel img{
+
+.logo_panel img {
     width: 90%;
 }
 
@@ -296,34 +326,43 @@ span[class^="icon-"] {
 .icon-other {
     background: url(../images/home_icon_other.png) no-repeat center;
 }
+
 i[class^="icon-"] {
     width: 24px;
     height: 24px;
     display: inline-block;
     vertical-align: middle;
 }
+
 .icon-search {
     background: url(../images/home_icon_search_normal.png) no-repeat center;
 }
+
 .icon-search:hover {
     cursor: pointer;
     background: url(../images/home_icon_search.png) no-repeat center;
 }
+
 .icon-cellphone {
     background: url(../images/home_icon_system_normal.png) no-repeat center;
 }
+
 .sys-ul-panel li a:hover .icon-cellphone {
     background: url(../images/home_icon_system_selected.png) no-repeat center;
 }
+
 .icon-notice {
     background: url(../images/home_icon_notice.png) no-repeat center;
 }
+
 .icon-upcoming {
     background: url(../images/home_icon_upcoming.png) no-repeat center;
 }
+
 .icon-help {
     background: url(../images/home_icon_help.png) no-repeat center;
 }
+
 .icon-link {
     background: url(../images/home_icon_link.png) no-repeat center;
 }

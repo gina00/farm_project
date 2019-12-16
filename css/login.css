@@ -1,7 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 html {
     height: 100%;
     box-sizing: border-box;
@@ -19,6 +20,7 @@ body {
     font-size: 1.2rem;
     font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
 }
+
 ul,
 li,
 p {
@@ -26,11 +28,13 @@ p {
     margin: 0;
     padding: 0;
 }
+
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 .bgBox {
     background: #4bb558;
     display: flex;
@@ -58,7 +62,7 @@ p {
     background: #fff;
 }
 
-.login-bg {
+.login-img {
     padding: 20px 30px;
 }
 
@@ -94,85 +98,114 @@ p {
     color: #0a9d1c;
     text-align: left;
     font-weight: bold;
+    margin-bottom: 26px;
 }
-.formContent{
+
+.formContent {
     margin-top: 10px;
+    position: relative;
+}
+
+.forgotPw {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.forgotPw i {
+    font-size: 12px;
+    height: auto;
+}
+.forgotPw a {
+    color: #0a9d1c;
+}
+
+.forgotPw a:hover {
+    color: #4bb558;
 }
 
 .bottmline {
     border-radius: 10px;
     width: 65px;
-    height: 5px;
+    height: 4px;
     background: #0a9d1c;
     margin-top: 6pt;
 }
 
-input {
+.Ipt-panle input {
     outline: none;
     border: none;
-}
-.userIpt::-webkit-input-placeholder{
-    color: #9caec7;
-    font-size: 14px;
-}
-.userIpt::-moz-placeholder{ 
-    color: #9caec7;  
-    font-size: 14px;      
-}
-.userIpt:-ms-input-placeholder{ 
-    color: #9caec7;     
-    font-size: 14px;   
-}
-.pwIpt::-webkit-input-placeholder{
-    color: #9caec7;
-    font-size: 14px;
-}
-.pwIpt::-moz-placeholder{ 
-    color: #9caec7;   
-    font-size: 14px;     
-}
-.pwIpt:-ms-input-placeholder{ 
-    color: #9caec7;       
-    font-size: 14px; 
-}
-.userIpt,
-.pwIpt {
-    font-size: 14px; 
-    border: 1px solid #9caec7;
-    width: 100%;
-    padding-left: 49px;
-    height: 40px;
-    margin-top: 15px;
-}
-.userIpt{
-    background: url(../images/login/icon_1.png) no-repeat 3% 37%;
-}
-.pwIpt{
-    background: url(../images/login/icon_3.png) no-repeat 3% 37%;
+    height: 37px;
+    width: 85%;
+    padding-left: 10px;
 }
 
-.userIpt:hover,
-.pwIpt:hover {
+.Ipt-panle input::-webkit-input-placeholder {
+    color: #9caec7;
+    font-size: 14px;
+}
+
+.Ipt-panle input::-moz-placeholder {
+    color: #9caec7;
+    font-size: 14px;
+}
+
+.Ipt-panle input:-ms-input-placeholder {
+    color: #9caec7;
+    font-size: 14px;
+}
+
+.Ipt-panle {
+    font-size: 14px;
+    border: 1px solid #9caec7;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    font-family: Microsoft YaHei;
+}
+
+i[class^='icon-'] {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-user {
+    background: url(../images/login/icon_1.png) no-repeat center;
+}
+
+.driver::after {
+    content: '';
+    border-left: 1px solid #9caec7;
+    height: 39px;
+    position: relative;
+    left: 23px;
+    display: inline-block;
+}
+
+.icon-pw {
+    background: url(../images/login/icon_3.png) no-repeat center;
+}
+
+.selected .icon-user {
+    background: url(../images/login/icon_2.png) no-repeat center;
+}
+
+.selected .icon-pw {
+    background: url(../images/login/icon_4.png) no-repeat center;
+}
+
+.selected .driver::after {
+    border-left: 1px solid #0a9d1c;
+}
+
+.selected.Ipt-panle {
     border: 1px solid #0a9d1c;
 }
-.userIpt:hover{
-    background: url(../images/login/icon_2.png) no-repeat 3% 37%;
-}
-.pwIpt:hover{
-    background: url(../images/login/icon_4.png) no-repeat 3% 37%;
-}
-.userIpt:focus,
-.pwIpt:focus {
-    border: 1px solid #0a9d1c;
-}
-.userIpt:focus{
-    background: url(../images/login/icon_2.png) no-repeat 3% 37%;
-}
-.pwIpt:focus{
-    background: url(../images/login/icon_4.png) no-repeat 3% 37%;
-}
-.userIpt:active,
-.pwIpt:active {
+
+.Ipt-panle:hover {
     border: 1px solid #0a9d1c;
 }
 
@@ -183,24 +216,54 @@ input {
     border-right: 1px solid #ccc;
     width: 40px;
 }
-button{
+
+button {
     border: none;
     outline: none;
 }
-.btnBox{
-    margin-top: 25px;
+
+.btnBox {
+    margin-top: 16px;
 }
-.loginbtn{
+
+.loginbtn {
     width: 100%;
     background: #0a9d1c;
     color: #fff;
     padding: 10px;
     border-radius: 3px;
 }
-.bottomText{
-    padding: 80px 80px 0;
+
+.loginbtn:hover {
+    background: #2fc944;
+    cursor: pointer;
+}
+
+.bottomText {
+    padding: 50px 80px 0;
     color: #acd9b1;
     font-size: 12px;
     letter-spacing: 2px;
+    height: 50px;
+    line-height: 50px;
+}
 
+.verificationCodePanel {
+    overflow: auto;
+}
+
+.verificationCodeInput {
+    width: 70%;
+    float: left;
+}
+
+.codeImg {
+    font-size: 14px;
+    border: 1px solid #9caec7;
+    width: 27%;
+    height: 40px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 3%;
+    float: left;
 }
