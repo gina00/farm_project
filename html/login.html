@@ -28,17 +28,57 @@
                         <div class="title">统一综合门户</div>
                         <div class="formBox">
                             <div class="formTitle">
-                                <span>欢迎登录</span>
-                                <p class="bottmline"></p>
+                                <ul>
+                                    <li class="selected">
+                                        <span>欢迎登录</span>
+                                        <p class="bottmline"></p>
+                                    </li>
+                                    <li>
+                                        <span>忘记密码</span>
+                                        <p class="bottmline"></p>
+                                    </li>
+                                </ul>
+
                             </div>
                             <div class="formContent">
-                                <div class="Ipt-panle">
-                                    <i class="icon-user driver"></i>
-                                    <input type="text" placeholder="请输入用户名" />
+                                <div class="verificationCodePanel">
+                                    <div class="Ipt-panle">
+                                        <i class="icon-user driver"></i>
+                                        <input type="text" placeholder="请输入用户名" />
+                                    </div>
                                 </div>
-                                <div class="Ipt-panle">
-                                    <i class="icon-pw driver"></i>
-                                    <input type="password" placeholder="请输入密码" />
+                                <div class="verificationCodePanel">
+                                    <div class="Ipt-panle">
+                                        <i class="icon-pw driver"></i>
+                                        <input type="password" placeholder="请输入密码" />
+                                    </div>
+                                </div>
+                                <div class="verificationCodePanel">
+                                    <div class="Ipt-panle verificationCodeInput">
+                                        <input type="text" placeholder="请输入验证码" />
+                                    </div>
+                                    <div class="codeImg">
+                                    </div>
+                                </div>
+                                <div class="btnBox">
+                                    <button class="loginbtn">登录</button>
+                                </div>
+                            </div>
+                            <div class="formContent hideFormContent">
+                                <div class="verificationCodePanel">
+                                    <div class="Ipt-panle">
+                                        <i class="icon-user driver"></i>
+                                        <input type="text" placeholder="请输入用户名" />
+                                    </div>
+                                </div>
+                                <div class="verificationCodePanel">
+                                    <div class="Ipt-panle verificationCodeInput">
+                                        <i class="icon-phone driver"></i>
+                                        <input type="text" placeholder="请输入验证码" />
+                                    </div>
+                                    <div class="codeImg">
+
+                                    </div>
                                 </div>
 
                                 <div class="verificationCodePanel">
@@ -49,14 +89,8 @@
 
                                     </div>
                                 </div>
-
-                                <div class="forgotPw">
-                                    <a href="#">
-                                        <i class="layui-icon layui-icon-help"></i>
-                                        忘记密码</a>
-                                </div>
                                 <div class="btnBox">
-                                    <button class="loginbtn">登录</button>
+                                    <button class="loginbtn">提交</button>
                                 </div>
                             </div>
                         </div>
@@ -71,8 +105,14 @@
 <script src="../js/jquery.min.js"></script>
 <script>
     $(function () {
-        $(".Ipt-panle").click(function () {
+        $(".verificationCodePanel").click(function () {
             $(this).addClass("selected").siblings().removeClass("selected");
+        })
+        $(".formTitle ul li").click(function () {
+            // $(this).eq($(this).index()).addClass("selected").siblings().removeClass("selected");
+            $(this).addClass("selected").siblings().removeClass("selected");
+            $(".formContent").hide().eq($(this).index()).show();
+            // $(".formContent:eq(0)").addClass("showFormContent")
         })
 
     })

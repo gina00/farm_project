@@ -206,7 +206,7 @@
                                 <div class="layui-tab-item layui-show">
                                     <iframe name="menuFrame" id="menuFrame" onload="reinitIframe()"
                                         src="html/rightContent.html" width="100%" height="100%" frameborder="0"
-                                        scrolling="no">
+                                        scrolling="yes">
                                     </iframe>
                                 </div>
                             </div>
@@ -248,22 +248,22 @@
     </script>
 </body>
 <script>
-    window.onresize = function () {
-        reinitIframe();
-    }
+    // window.onresize = function () {
+    //     reinitIframe();
+    // }
 
-    function reinitIframe() {
-        var iframe = document.getElementById("menuFrame");
-        try {
-            var bHeight = iframe.contentWindow.document.body.scrollHeight;
-            var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
-            var height = Math.min(bHeight, dHeight);
-            iframe.height = height;
-            // console.log(iframe.height);
-        } catch (ex) {}
-    }
-    // 定时触发
-    window.setInterval("reinitIframe()", 200);
+    // function reinitIframe() {
+    //     var iframe = document.getElementById("menuFrame");
+    //     try {
+    //         var bHeight = iframe.contentWindow.document.body.scrollHeight;
+    //         var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+    //         var height = Math.min(bHeight, dHeight);
+    //         iframe.height = height;
+    //         // console.log(iframe.height);
+    //     } catch (ex) {}
+    // }
+    // // 定时触发
+    // window.setInterval("reinitIframe()", 200);
 </script>
 
 </html>

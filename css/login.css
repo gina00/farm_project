@@ -94,11 +94,35 @@ p {
 }
 
 .formTitle {
+    margin-bottom: 16px;
+}
+
+.formTitle ul {
+    overflow: auto;
+}
+
+.formTitle ul li {
+    float: left;
+    font-size: 16px;
+    color: #666;
+    line-height: 23px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.formTitle ul li.selected {
     font-size: 20px;
     color: #0a9d1c;
     text-align: left;
     font-weight: bold;
-    margin-bottom: 26px;
+}
+
+.formTitle ul li.selected .bottmline {
+    border-radius: 10px;
+    width: 65px;
+    height: 4px;
+    background: #0a9d1c;
+    margin-top: 6pt;
 }
 
 .formContent {
@@ -106,30 +130,12 @@ p {
     position: relative;
 }
 
-.forgotPw {
-    text-align: right;
-    margin-top: 10px;
-    font-size: 12px;
+.showFormContent {
+    display: block;
 }
 
-.forgotPw i {
-    font-size: 12px;
-    height: auto;
-}
-.forgotPw a {
-    color: #0a9d1c;
-}
-
-.forgotPw a:hover {
-    color: #4bb558;
-}
-
-.bottmline {
-    border-radius: 10px;
-    width: 65px;
-    height: 4px;
-    background: #0a9d1c;
-    margin-top: 6pt;
+.hideFormContent {
+    display: none;
 }
 
 .Ipt-panle input {
@@ -159,7 +165,7 @@ p {
     font-size: 14px;
     border: 1px solid #9caec7;
     width: 100%;
-    height: 40px;
+    height: 41px;
     margin-top: 10px;
     position: relative;
     font-family: Microsoft YaHei;
@@ -189,12 +195,20 @@ i[class^='icon-'] {
     background: url(../images/login/icon_3.png) no-repeat center;
 }
 
+.icon-phone {
+    background: url(../images/login/tell_1.png) no-repeat center;
+}
+
 .selected .icon-user {
     background: url(../images/login/icon_2.png) no-repeat center;
 }
 
 .selected .icon-pw {
     background: url(../images/login/icon_4.png) no-repeat center;
+}
+
+.selected .icon-phone {
+    background: url(../images/login/tell_2.png) no-repeat center;
 }
 
 .selected .driver::after {
@@ -257,11 +271,15 @@ button {
     float: left;
 }
 
+.verificationCodeInput input {
+    width: 78%;
+}
+
 .codeImg {
     font-size: 14px;
     border: 1px solid #9caec7;
     width: 27%;
-    height: 40px;
+    height: 41px;
     margin-top: 10px;
     position: relative;
     margin-left: 3%;
