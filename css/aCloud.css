@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'alibabaPuHuiTi';
+    src:
+        url('../fonts/Alibaba-PuHuiTi-Regular.ttf') format('truetype'),
+        url('../fonts/Alibaba-PuHuiTi-Medium.eot?#iefix') format('embedded-opentype');/*IE 需要加验证*/
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: 'alibabaPuHuiTi', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Microsoft YaHei;
+}
+
+.cloudBg {
+    width: 100%;
+    height: 100%;
+    background: url("../images/cloud/home_image_bg.png") no-repeat;
+    background-size: cover;
+}
+
+.header {
+    height: 50px;
+    background: rgba(1, 80, 176, 0.8);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.signInPanel {
+    margin-right: 40px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.signInPanel a:hover {
+    cursor: pointer;
+}
+
+.contentH {
+    font-size: 36px;
+    color: #fff;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+    font-family: 'alibabaPuHuiTi', Microsoft YaHei;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-shadow: 0 3px 2px rgba(77, 77, 77, 0.2);
+}
+
+.content-ul {
+    overflow: auto;
+    font-family: "alibabaPuHuiTi", Microsoft YaHei;
+}
+
+.content-ul li {
+    float: left;
+    width: 32%;
+    width: -moz-calc((100% - 40px) / 3);
+    width: -webkit-calc((100% - 40px) / 3);
+    height: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.content-ul li a {
+    width: 100%;
+    display: block;
+}
+
+.content-ul li a:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.content-ul li:first-child {
+    margin-left: 0;
+}
+
+.imgBgPos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.contentTxt {
+    font-size: 18px;
+    color: #fff;
+    padding: 26px 40px;
+    line-height: 26px;
+}
+
+/* 色块 */
+.color-01 {
+    background: #178de8;
+}
+
+.color-02 {
+    background: #00bcd4;
+}
+
+.color-03 {
+    background: #ffc107;
+}
+
+.color-04 {
+    background: #8bc34a;
+}
+
+.color-05 {
+    background: #e91e63;
+}
+
+/* 色块下图标*/
+div[class*='img-'] {
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.img-pig {
+    background: url(../images/cloud/home_icon_pig.png) no-repeat center;
+}
+
+.img-price {
+    background: url(../images/cloud/home_icon_price.png) no-repeat center;
+}
+
+.img-ticket {
+    background: url(../images/cloud/home_icon_ticket.png) no-repeat center;
+}
+
+.img-greenfood {
+    background: url(../images/cloud/home_icon_greenfood.png) no-repeat center;
+}
+
+.img-rural {
+    background: url(../images/cloud/home_icon_rural.png) no-repeat center;
+}
+
+i[class^='icon-'],
+a[class^='icon-'] {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-signOut {
+    background: url(../images/cloud/home_icon_quit.png) no-repeat center;
+}

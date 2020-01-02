@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>农业云131</title>
+    <link href="../css/aCloud.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/layui/css/layui.css">
+</head>
+
+<body>
+    <div class="cloudBg">
+        <div class="header">
+            <div class="signInPanel">
+                <span>登录</span>
+                <a class="icon-signOut" href="#"></a>
+            </div>
+        </div>
+        <section class="layui-container">
+            <div class="contentH">农业云131</div>
+            <ul class="content-ul">
+                <li class="color-01">
+                    <a href="#">
+                        <p class="contentTxt">生猪可视化<br>智能监控系统</p>
+                        <div class="imgBgPos img-pig"></div>
+                    </a>
+                </li>
+                <li class="color-02">
+                    <a href="#">
+                        <p class="contentTxt">猪价监测系统</p>
+                        <div class="imgBgPos img-price"></div>
+                    </a>
+                </li>
+                <li class="color-03">
+                    <a href="#">
+                        <p class="contentTxt">动物检疫票证<br>电子化系统</p>
+                        <div class="imgBgPos img-ticket"></div>
+                    </a>
+                </li>
+            </ul>
+            <ul class="content-ul">
+                <li class="color-04">
+                    <a href="#">
+                        <p class="contentTxt">绿色食品认证<br>管理系统</p>
+                        <div class="imgBgPos img-greenfood"></div>
+                    </a>
+                </li>
+                <li class="color-05">
+                    <a href="#">
+                        <p class="contentTxt">乡村振兴平台</p>
+                        <div class="imgBgPos img-rural"></div>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+<script src="../node_modules/layui/layui.js"></script>
+<script src="../js/jquery.min.js"></script>
+<script>
+    $(function () {
+        $(".verificationCodePanel").click(function () {
+            $(this).addClass("selected").siblings().removeClass("selected");
+        })
+        $(".formTitle ul li").click(function () {
+            // $(this).eq($(this).index()).addClass("selected").siblings().removeClass("selected");
+            $(this).addClass("selected").siblings().removeClass("selected");
+            $(".formContent").hide().eq($(this).index()).show();
+            // $(".formContent:eq(0)").addClass("showFormContent")
+        })
+
+    })
+</script>
+
+</html>
