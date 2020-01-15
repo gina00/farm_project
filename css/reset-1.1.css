@@ -1,6 +1,7 @@
 @font-face {
     font-family: 'alibabaPuHuiTi';
-    src: url('../fonts/Alibaba-PuHuiTi-Regular.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Bold.otf') format('opentype'), url('../fonts/Alibaba-PuHuiTi-Medium.otf') format('opentype'), url('../fonts/FontAwesome.otf') format('opentype');
+    src: url('../fonts/Alibaba-PuHuiTi-Regular.ttf') format('truetype'),
+    url('../fonts/Alibaba-PuHuiTi-Medium.eot?#iefix') format('embedded-opentype');/*IE 需要加验证*/
     font-weight: normal;
     font-style: normal;
 }
