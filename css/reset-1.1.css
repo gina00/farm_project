@@ -1,7 +1,8 @@
 @font-face {
     font-family: 'alibabaPuHuiTi';
     src: url('../fonts/Alibaba-PuHuiTi-Regular.ttf') format('truetype'),
-    url('../fonts/Alibaba-PuHuiTi-Medium.eot?#iefix') format('embedded-opentype');/*IE 需要加验证*/
+        url('../fonts/Alibaba-PuHuiTi-Medium.eot?#iefix') format('embedded-opentype');
+    /*IE 需要加验证*/
     font-weight: normal;
     font-style: normal;
 }
@@ -81,7 +82,7 @@ img {
 
 .nav-panel-user {
     padding: 15px 0;
-    overflow: auto;
+    position: relative;
 }
 
 .nav-panel-user div {
@@ -107,8 +108,52 @@ img {
     white-space: nowrap;
 }
 
+.usericon a::after {
+    content: '';
+    border-width: 6px;
+    border-color: #ffffff transparent transparent transparent;
+    border-style: solid;
+    font-size: 10px;
+    position: relative;
+    top: 8px;
+    left: 10px;
+}
+
 .usericon a:hover {
     color: #fff000;
+}
+
+.userDownListPanel {
+    position: absolute;
+    top: 40px;
+    width: 70%;
+    z-index: 1;
+}
+
+.userDownListPanel ul {
+    background: #66a52994;
+}
+
+.userDownListPanel ul li {
+    padding: 10px;
+    border-bottom: 1px solid #68ae1b;
+}
+
+.userDownListPanel ul li:last-child {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.userDownListPanel ul li:hover {
+    background-color: #74a966;
+}
+
+.userDownListPanel ul li a {
+    color: #fff;
+}
+
+.userDownListPanel ul li a:hover {
+    color: #fff;
 }
 
 .sub-nav ul {
@@ -196,7 +241,8 @@ img {
     overflow: auto;
     margin-top: 20px;
 }
-.search-panel:hover{
+
+.search-panel:hover {
     border: 1px solid #30b254;
 }
 
@@ -214,14 +260,17 @@ img {
     top: 10px;
     right: 10px;
 }
-.sys-ul-panel{
+
+.sys-ul-panel {
     overflow: auto;
     margin-bottom: 30px;
 }
-.sys-ul-panel ul{
+
+.sys-ul-panel ul {
     width: 33.33%;
     float: left;
 }
+
 .sys-ul-panel li {
     margin-top: 30px;
 }
@@ -240,11 +289,13 @@ img {
     margin-left: 10px;
     vertical-align: middle;
 }
-.showRightBtn{
+
+.showRightBtn {
     position: absolute;
     top: 50%;
     right: 0;
 }
+
 .right-nav {
     height: 100%;
     background: #ffffff;

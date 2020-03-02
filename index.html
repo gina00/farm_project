@@ -45,9 +45,19 @@
                                     </div>
                                     <div class="layui-col-md3">
                                         <div class="nav-panel-user">
-                                            <div class="usericon">
+                                            <div class="usericon" id="userDownListBtn">
                                                 <span>你好,</span>
                                                 <a href="#">农业厅系统管理员</a>
+                                            </div>
+                                            <div id="userDownListPanel" style="display: none;">
+                                                <ul>
+                                                    <li>
+                                                        <a>个人信息</a>
+                                                    </li>
+                                                    <li>
+                                                        <a>密码修改</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="exit">
                                                 <a>
@@ -206,6 +216,9 @@
         $(function () {
             $(".nav-panel-ul li,.sub-nav li").click(function () {
                 $(this).addClass("selected").siblings().removeClass("selected");
+            })
+            $("#userDownListBtn").click(function () {
+                $("#userDownListPanel").show();
             })
         })
     </script>
